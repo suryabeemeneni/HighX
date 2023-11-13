@@ -1,0 +1,330 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px 0px rgb(219, 219, 219);
+
+    background-color: transparent;
+    position: relative;
+}
+.navbar-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.navbar-top {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.navbarImage {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navI {
+    display: inline;
+    overflow-clip-margin: content-box;
+    overflow: none;
+}
+.nav-function {
+    display: none;
+}
+.nav-function::after {
+    display: flex;
+}
+.navbarLinks {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: right;
+}
+.navbarLinks a:hover {
+    color:#3498DB;
+}
+.navL {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+.navbar-bottom {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.navbarItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+.navFirstItem {
+    width: 55%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 650;
+    gap: 5px;
+}
+.nav-toll {
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+}
+.navSecondItem {
+    width: 41%;
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+    margin-right: 2%;
+}
+.nav-butt1 {
+    font-size: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 16px;
+    color: #ffffff;
+    background-color: #3498DB;
+    border: 1px solid #3498DB;
+
+    border-radius: 30px;
+}
+.nav-butt1:hover {
+    background-color: transparent;
+    color: #3498DB;
+}
+.nav-butt2 {
+    font-size: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 16px;
+    color: #3498DB;
+    border: 1px solid #3498DB;
+
+    border-radius: 30px;
+}
+.nav-butt2:hover {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+@media (max-width:1649px) {
+    .navbar-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-top {
+        width: 55%;
+    }
+    .navbarImage {
+        width: 30%;
+    }
+    .navI {
+        width: 90%;
+    }
+    .navbarLinks {
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        gap: 55px;
+        padding-bottom: 20px;
+
+        position: absolute;
+        right: 6%;
+        top: 65%;
+    }
+    .navL {
+        font-size: 110%;
+    }
+    .navbar-bottom {
+        width: 98%;
+        justify-content: right;
+        align-items: center;
+        gap: 50px;
+
+        position: absolute;
+        top: 5%;
+    }
+    .navbarItems {
+        width: 99%;
+        gap: 15px;
+    }
+    .navFirstItem {
+        width: 45%;
+        gap: 5px;
+    }
+    .navSecondItem {
+        width: 330px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar-top {
+        width: 100%;
+        gap: 70%;
+    }
+    .navbar-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        position: unset;    
+    }
+    .navbarImage {
+        width: 20%;
+        align-items: center;
+    }
+    .navI {
+        width: 90%;
+    }
+    .nav-function {
+        width: 5%;
+        display: flex;
+        align-items: center;
+        border-color: transparent;
+        background-color: transparent;
+    }
+    .nav-functionIcon {
+        width: 100%;
+        height: 40%;
+    }
+    .navbarLinks {
+        display: none;
+        flex-direction: column;
+        width: 20%;
+        gap: 5px;
+        padding-bottom: 0px;
+        left: 0.3%;
+        top: 0.5%;
+        justify-content: left;
+        border-right: none;
+        background-color: #3498DB;
+        overflow: scroll;
+    }
+    .navbarLinks::-webkit-scrollbar {
+        display: none;
+    }
+    .navL {
+        width: 90%;
+        font-size: 70%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        padding: 12px 10px;
+        border-bottom: 0.1px dotted #ababab;
+    }
+    .navL:hover {
+        color: #444444;
+    }
+    .navbarItems {
+        width: 95%;
+        justify-content: center;
+        padding: 10px 0px;
+        border-top: 1px solid #eee;
+    }
+    .navFirstItem {
+        width: 50%;
+        gap: 5px;
+
+        background-color: #e9f6ff;
+        justify-content: center;
+        border-radius: 30px;
+        padding: 10px 10px;
+    }
+    .navSecondItem {
+        width: 50%;
+        justify-content: center;
+        gap: 13%;
+    }
+    .nav-toll {
+        font-size: 90%;
+    }
+    .nav-butt1 {
+        padding: 10px 7%;
+    }
+    .nav-butt2 {
+        padding: 10px 7%;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbarImage {
+        width: 20%;
+        min-width: 5%;
+        display: flex;
+    }
+    .navI {
+        width: 95%;
+        min-height: 99%;
+    }
+    .navbar-top {
+        width: 100%;
+        gap: 70%;
+
+        align-items: center;
+    }
+    .nav-function {
+        width: 6.5%;
+        min-width: 27px;
+    }
+    .navL {
+        font-size: 50%;
+        padding: 10px 10px;
+    }
+    .navbarItems {
+        flex-direction: column;
+        padding-top: 7px;
+        gap: 7px;
+    }
+    .navFirstItem {
+        width: 97%;
+        padding: 10px;
+        margin-bottom: 2px;
+    }
+    .nav-toll {
+        font-size: 75%;
+    }
+    .navSecondItem {
+        width: 100%;
+        gap: 5%;
+    }
+    .nav-butt1 {
+        width: 50%;
+        font-size: 100%;
+        padding: 10px 15px;
+    }
+    .nav-butt2 {
+        width: 50%;
+        font-size: 100%;
+        padding: 10px 15px;
+    }
+}
