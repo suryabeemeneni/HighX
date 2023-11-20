@@ -1,43 +1,22 @@
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 
-// const Chat = () => {
-//     useEffect (() => {return () => {alert("Chat window closed")}})
+const Chat = () => {
+    useEffect (() => {return () => {alert("Chat window closed")}})
 
-//     useEffect (() => {alert("Chat window opened")}, [])
-//     return (
-//         <div>
-//             surya
-//         </div>
-//     );
-// };
-
-// // function Chat () {
-// //     return (
-// //         <div>
-// //             surya
-// //         </div>
-// //     )
-// // }
-// export default Chat;
-
-
-
-
-
-import React from 'react';
-
-
-
-const Chat = ({onClose}) => {
-
-
+    useEffect (() => {alert("Chat window opened")}, [])
     return (
         <div>
             surya
-            <button onClick={() => onClose()}>&times;</button>
         </div>
     );
 };
 
+// function Chat () {
+//     return (
+//         <div>
+//             surya
+//         </div>
+//     )
+// }
 export default Chat;
