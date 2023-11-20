@@ -1,19 +1,28 @@
 import React,{ useEffect, useState } from 'react';
 import '../useState/Increment.css';
 import Chats from './Chat';
+import LoginForm from '../../formvalidation/sampleform/LoginForm/LoginForm';
+import LoginPage from '../../formvalidation/sampleform/LoginForm/LoginPage';
 
 
-const UECP = () => {
+const UECP = (props) => {
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
+    
+    const handleButtonclick = () => {
+        setOpen(false)
+    }
+
 
     return (
         <div className='somebasicuseState'>
             {/* <button>open & close</button> */}
             {/* <button onClick={() => setOpen(!open)}>open & close</button> */}
 
-            {open && <Chats/>}
-            <button onClick={() => setOpen(!open)}>open & close</button>
+            {/* {open && <Chats onClose={handleButtonclick}/>} */}
+            <button onClick={() => setOpen(!open)}>open</button>
+            {/* {open && <LoginForm onClose={handleButtonclick}/>} */}
+            {open && <LoginPage />}
         </div>
     );
 };

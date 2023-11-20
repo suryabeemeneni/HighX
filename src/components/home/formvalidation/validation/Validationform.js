@@ -34,7 +34,7 @@ const Validationform = () => {
     {inputError && <div style={{color:"red"}}>{inputError}</div>}
     </div>
 
-    <div className='validationform-subbmit'><input type='submit' value="validate"/></div>
+    <div className='validationform-subbmit'><input type='submit' value="Validate"/></div>
     </div>
 </form>
 </div>

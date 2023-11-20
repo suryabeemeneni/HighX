@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(251, 251, 251);
-    overflow: hidden;
 }
 
 .props-sub-div {
@@ -17,6 +16,7 @@
     align-items: center;
     gap: 5%;
     box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+    overflow: hidden;
 }
 .props-image-div {
     width: 40%;
@@ -58,7 +58,7 @@
 }
 .props-container2 {
     width: 90%;
-    height: auto;
+    height: 18%;
     display: flex;
     justify-content: center;
     box-shadow: 0 2px 36px -5px rgba(45, 45, 45, 0.15);
@@ -74,6 +74,27 @@
     width:85%;
 }
 .props-container2-link:hover{
+    color: white;
+    transition: 0.7s;
+}
+.props-container3 {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 36px -5px rgba(45, 45, 45, 0.15);
+}
+.props-container3:hover {
+    background-color: #3498DB;
+    transition: 0.7s;
+}
+.props-container3-link{
+    text-decoration: none;
+    color:black;
+    font-Style:revert;
+    width:85%;
+}
+.props-container3-link:hover{
     color: white;
     transition: 0.7s;
 }

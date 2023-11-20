@@ -6,9 +6,9 @@
     align-items: center;
 }
 .hooks-sub-div {
-    width: 100%;
+    width: 90%;
     height: 90%;
-    background-image: url(https://images.prismic.io/loco-blogs/c5c9747e-40a6-4388-a698-4a69d1636596_react+cutom+hooks-1.png?auto=compress%2Cformat&rect=0%2C0%2C3840%2C2160&w=1920&h=1080&ar=1.91%3A1);
+    background-image: url(/src/images//hooksImages/hooksbackground.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -16,12 +16,27 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10%;
     overflow: hidden;
     box-shadow: 0 24px 36px -11px rgb(0 0 0 / 30%);
 }
+.hooks-sub-container1-div {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.hooks-containers-main {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .hooks-container {
     width: fit-content;
+    height: 100%;
 }
 .hooks-link {
     text-decoration: none;
@@ -30,8 +45,15 @@
 }
 .hooks-link:hover {
     color: #3498DB; 
-        transition: 0.7s;
+    transition: 0.7s;
+}
+.hooks-link h1 {
+    box-shadow: 0px 3px 15px 0px #3498DB;
 }
 .hooks-link h1:hover {
     border-bottom: 0.1px solid rgb(148, 148, 148);
+}
+.hooks-sub-container2-div {
+    width: 40%;
+    height: 90%;
 }

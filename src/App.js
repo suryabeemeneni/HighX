@@ -22,6 +22,8 @@ import Multipleforms from "./components/home/formvalidation/Multipleformfields/M
 import Controlledform from "./components/home/formvalidation/controlledforms/Controlledform"
 import Controlledformvalid from "./components/home/formvalidation/controlledforms/Controlledformvalid"
 import Validationformcontrol from "./components/home/formvalidation/controlledforms/Validationformcontrol"
+import Caluclator from "./components/home/Caluclator/Caluclator"
+import LoginForm from "./components/home/formvalidation/sampleform/LoginForm/LoginForm"
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
     <>
       <Router>
         <Navbar />
+        <Caluclator/>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/AboutUs' component={AboutUs} />
@@ -49,6 +52,7 @@ function App() {
           <Route exact path='/Controlledformvalid' component={Controlledformvalid}/>
           <Route exact path='/Validationformcontrol' component={Validationformcontrol}/>
           <Route exact path='/Hooksform' component={HooksFrom}/>
+          <Route exact path='/LoginForm' component={LoginForm}/>
         </Switch>
         <Footerslide />
         <Footer />

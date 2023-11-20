@@ -37,8 +37,8 @@ const Controlledform = () => {
                 <div>
                 <button className='button-forms'
                 onClick={(e) => {e.preventDefault();
-                    console.log("Email : ",email);
-                    console.log("Password : ", password);
+                    alert("Email : ",email);
+                    alert("Password : ", password);
                 }}
                 >Login</button>
                 </div>

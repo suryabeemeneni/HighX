@@ -22,7 +22,7 @@ const Controlledformvalid = () => {
             // setErrors((errors) => ({}))
 
             // setErrors({...errors,email:"Enter Email address"})
-            setErrors((errors) => ({...errors,email:"Enter Email address"}))
+        setErrors((errors) => ({...errors,email:"Enter Email address"}))
         }
         else if (!emailpattern.test(email)) {
             setErrors((errors) => ({...errors,email:"Enter Valid Email address"}))

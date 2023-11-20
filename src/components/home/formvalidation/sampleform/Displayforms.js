@@ -2,6 +2,9 @@ import React from 'react';
 import './Displayforms.css';
 import formslogo from '../../../../images/FormvalidationImages/formslogo.png'
 import Sampleform from './Sampleform'
+import Basicform from './Basicform';
+import Example from './Example';
+import LoginForm from './LoginForm/LoginForm';
 
 
 const Displayforms = () => {
@@ -24,8 +27,12 @@ const Displayforms = () => {
                         </div>
                         <div className='sampleform-div'>
                             <marquee><h1 style={{fontFamily:"cursive"}}>Basic form creation</h1></marquee>
-                            <Sampleform />
-                            <a href='/Sampleform'>view large... </a>
+                            {/* <Sampleform /> */}
+                            {/* <Basicform /> */}
+                            {/* <Example/> */}
+                            <LoginForm />
+                            {/* <a href='/Sampleform'>view large... </a> */}
+                            <a href='/LoginForm'>view large... </a>
                             </div>
                     </div>
                 </div>

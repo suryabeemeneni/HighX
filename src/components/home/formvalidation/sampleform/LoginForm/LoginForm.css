@@ -1,0 +1,206 @@
+.LoginForm-main-div {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.LoginForm-sub-div {
+    width: 400px;
+    height: 27.5rem;
+    box-shadow: 0 4px 10px 1px rgb(0 0 0 / 15%);
+    border-radius: 20px 0px 0px 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.LoginForm-logo {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* gap: 70%; */
+}
+.LoginForm-logo-image {
+    width: 100px;
+    height: 35px;
+    /* margin: 3% 0 0 3%; */
+}
+.LoginForm-logo i{
+    width: 75%;
+    text-align: right;
+    margin-bottom: 34px;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    transition: all 0.7s ease;
+    &:hover {
+        color: rgb(36, 36, 36);
+        transition: all 0.3s ease;
+    }
+}
+
+.LoginForm-container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 5%;
+}
+.LoginForm-heading {
+    width: 100%;
+    height: 15%;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.LoginForm-heading h2{
+    width: 65%;
+}
+
+
+
+
+.LoginForm-form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    position: relative;
+}
+.LoginForm-form-input input{
+    width: 85%;
+    height: 100%;
+    font-size: 17px;
+    outline-style: none;
+    &:focus{
+        border-color: cadetblue;
+    }
+    &:valid{
+        border-color: cadetblue;
+    }
+}
+.LoginForm-form-input input:focus ~ label, .LoginForm-form-input input:valid ~ label{
+    transform: translateY(-22.5px);
+    font-size: 13px;
+    color: cadetblue;
+}
+.LoginForm-form-input label{
+    position: absolute;
+    bottom: 10px;
+    left: 8%;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+.LoginForm-passwordIcon {
+    position: absolute;
+    right: 25px;
+    top: -3px;
+    cursor: pointer;
+}
+
+.LoginForm-form-error {
+    color: red;
+    font-size: 75%;
+    margin-left: 17px;
+}
+
+
+.LoginForm-form-checkbox-container {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16%;
+    font-size: 85%;
+}
+.LoginForm-form-checkbox-container-one{
+    display: flex;
+    align-items: center;
+}
+.LoginForm-form-checkbox-container-one input{
+    width: 15px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.LoginForm-form-checkbox-container-two{
+    display: flex;
+    align-items: center;
+}
+.LoginForm-form-checkbox-container-two a{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    transition: all 1s ease;
+    &:hover {
+        color: cadetblue;
+        transition: all 0.3s ease;
+    }
+}
+
+
+.LoginForm-form-subbmitButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.LoginForm-form-subbmitButton button{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(37, 104, 107);
+    font-size: 120%;
+    color: rgb(250, 250, 250);
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    margin: 0px 0px 0 0;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 24px 36px -11px rgb(8 1 6 / 5%);
+    &:hover {
+        background-color: rgb(28, 84, 87);
+        color: rgb(231, 231, 231);
+    }
+}
+
+
+.LoginForm-line hr{
+    background-color: cadetblue;
+}
+
+.LoginForm-singup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.LoginForm-singup p{
+    width: 50%;
+    margin: 0;
+    font-size: 80%;
+}
+.LoginForm-singup-link{
+    width: 20%;
+    font-size: 95%;
+    text-decoration: none;
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    &:hover {
+        font-weight: 600;
+    }
+}

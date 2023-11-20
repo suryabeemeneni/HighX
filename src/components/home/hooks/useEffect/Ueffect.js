@@ -13,8 +13,12 @@ const Ueffect = () => {
     }
 
     // // no dependencies      --> everytime X value changes useEffect will work 
-    useEffect (function () {document.title = X+"side effect working"})
+    useEffect (function () {document.title = Y+"side effect working"})
 
+
+
+
+    useEffect (function () {})
 
     // // Blank Dependencies (empty array [])      -->    this side effect runs after the initial rendering (works one time only as first render)
     useEffect (function () {document.title = "side effect works for onetime"},[])

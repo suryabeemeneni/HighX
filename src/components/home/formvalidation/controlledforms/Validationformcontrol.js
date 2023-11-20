@@ -51,12 +51,12 @@ const validateEmail = () => {
   }
 };
 
-// // Input change handler
-// const handleChange = (e) => {
-//   const { name, value } = e.target;
-//   // Update the form data when an input field value changes
-//   setFormData((prevData) => ({...prevData,[name]: value,}));
-// };
+// Input change handler
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  // Update the form data when an input field value changes
+  setFormData((prevData) => ({...prevData,[name]: value,}));
+};
 
 
 
@@ -72,8 +72,8 @@ const validateEmail = () => {
         <label htmlFor="name">Name:</label><br/>
         <input type="text" id="name" name="name"
         value={formData.name}
-        // onChange={handleChange}/><br/>
-        onChange={(e) => setFormData(e.target.value)}/><br/>
+        onChange={handleChange}/><br/>
+        {/*  onChange={(e) => setFormData(e.target.value)}/><br/> */}
         <span className="error" style={{color:"red"}}>{errors.name}</span>
       </div>
 
@@ -83,8 +83,8 @@ const validateEmail = () => {
         <label htmlFor="email">Email:</label><br/>
         <input type="email" id="email" name="email"
         value={formData.email}
-        // onChange={handleChange}/><br/>
-        onChange={(e) => setFormData(e.target.value)}/><br/>
+        onChange={handleChange}/><br/>
+        {/* onChange={(e) => setFormData(e.target.value)}/><br/> */}
         <span className="error" style={{color:"red"}}>{errors.email}</span>
       </div>
       
