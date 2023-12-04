@@ -1,0 +1,69 @@
+.home-main-div {
+    width: 100%;
+    height: 35rem;
+    background-image: url(./HomeImages/FrontendDevimg2.webp);
+    background-repeat: no-repeat;
+    background-size: 70% 90%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.home-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    padding-bottom: 5rem;
+}
+.home-content-div {
+    /* width: 50%; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 254, 255);
+    font-size: 90%;
+
+}
+
+
+
+.home-slide-courses {
+    position: fixed;
+    top: 30%;
+    left: 0.5;
+
+
+
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+    font-size: 90%;
+    & a {
+        height: 50px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        color: black;
+        opacity: 0.5;
+        box-shadow: 0 0px 3px 0 black;
+        border-radius: 0 50px 50px 0;
+        &:hover {
+            opacity: 1;
+            box-shadow: 2px 24px 36px -11px rgb(0 0 0 / 39%);
+        }
+    }
+    &:hover {
+        opacity: 1;
+    }
+}

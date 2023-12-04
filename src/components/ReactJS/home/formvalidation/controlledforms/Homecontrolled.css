@@ -1,0 +1,38 @@
+.homecontrolled-main-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.homecontrolled-sub-div {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -0.5px -0.1px 10px -3px rgb(0 0 0 / 15%);
+    gap: 10%;
+}
+.form {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form a{
+    font-size: 120%;
+    padding: 0 0 20px 0;
+    color: rgb(35, 35, 35);
+    font-style: oblique;
+    text-Decoration:none;
+}
+.form a:hover{
+    color: #3498DB;
+    border-bottom: 0.1px solid white;
+    transition: 0.9s;
+}
