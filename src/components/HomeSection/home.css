@@ -1,9 +1,9 @@
 .home-main-div {
     width: 100%;
     height: 35rem;
-    background-image: url(./HomeImages/FrontendDevimg2.webp);
+    background-image: url(./HomeImages/backgroungHomeImage.jpeg);
     background-repeat: no-repeat;
-    background-size: 70% 90%;
+    background-size: 100% 70%;
     background-position: center;
     background-attachment: fixed;
 }

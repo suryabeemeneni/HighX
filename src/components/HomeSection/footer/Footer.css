@@ -1,7 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
 }
-.footer-top {
+/* .footer-top {
     width: 100%;
     background-color: rgba(233, 246, 255, 0.7);
     border-bottom: 0.5px groove rgb(207, 207, 207);
@@ -31,7 +31,7 @@ body {
 }
 .f-t:hover {
     color: #053b5f;
-}
+} */
 .footer-main {
     width: 100%;
     height: auto;

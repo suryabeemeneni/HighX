@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav className={'navbar'}>
                 <div className='navbar-content'>
                     <div className='navbar-top'>
-                        <a href='' className='navbarImage'>
+                        <a href='/' className='navbarImage'>
                             <img src={logo} alt='surya' className='navI'></img>
                         </a>
                         <button className="nav-function"><i className='fa fa-bars'/></button>

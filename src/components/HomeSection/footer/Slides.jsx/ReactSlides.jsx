@@ -5,7 +5,8 @@ const ReactSlides = () => {
     return (
         <>
 
-        <div className="footer-top-text">
+        <div className="footer-top-text  f-t-w">
+        <a href='/ReactHome' className='f-t' title='Increment'>ReactHome</a>
         <a href='/Incremenet' className='f-t' title='Increment'>Incremenet</a>
         <a href='/IncremenetDecrement' className='f-t' title='Increment Decrement'>IncremenetDecrement</a>
         <a href='/Usestate' className='f-t'>Usestate</a>

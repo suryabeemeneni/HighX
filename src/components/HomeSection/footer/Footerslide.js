@@ -1,29 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footerslide.css'
+import ReactSlides from './Slides.jsx/ReactSlides';
+import HtmlSlide from './Slides.jsx/HtmlSlide';
 
 const Footerslide = () => {
+    const [htmlOpen, setHtmlOpen] = useState(false)
+    const [reactOpen, setReactOpen] = useState(false)
     return (
         <>
         <div className="footer-top">
         <div className='footer-top-text'>
-        <a href='/' className='f-t'>Go to Home</a>
-        <a href='/Incremenet' className='f-t' title='Increment'>Incremenet</a>
-        <a href='/IncremenetDecrement' className='f-t' title='Increment Decrement'>IncremenetDecrement</a>
-        <a href='/Usestate' className='f-t'>Usestate</a>
-        <a href='/Ueffect' className='f-t' title='useEffect'>useEffect</a>
-        <a href='/Useeffect' className='f-t'>Useeffect</a>
-        <a href='/Useeffectwdp' className='f-t' title='useEffect Cleanup'>Useeffectwdp</a>
-        <a href='/Useeffectblankdeo' className='f-t'>Useeffectblankdeo</a>
-        <a href='/UECP' className='f-t'>UECP</a>
-        <a href='/Sampleform' className='f-t'>Sampleform</a>
-        <a href='/Displayforms' className='f-t'>Displayforms</a>
-        <a href='/Formvalidhome' className='f-t'>Formvalidhome</a>
-        <a href='/Validationform' className='f-t'>Validationform</a>
-        <a href='/Multipleforms' className='f-t'>Multipleforms</a>
-        <a href='/Controlledform' className='f-t'>Controlledform</a>
-        <a href='/Controlledformvalid' className='f-t'>Controlledformvalid</a>
-        <a href='/Validationformcontrol' className='f-t'>Validationformcontrol</a>
-        <a href='/HooksFrom' className='f-t'>HooksFrom</a>
+        <a href='/' className='f-t f-t-m'>Home</a>
+        <a className='f-t f-t-m' onClick={() => {
+            setHtmlOpen(!htmlOpen);setReactOpen(false)
+        }}>HTML</a>
+        {htmlOpen && <HtmlSlide/>}
+        <a className='f-t f-t-m'>CSS</a>
+        <a className='f-t f-t-m' >JavaScript</a>
+        <a className='f-t f-t-m' onClick={() => {
+            setReactOpen(!reactOpen);setHtmlOpen(false)
+        }}>ReactJs</a>
+        {reactOpen && <ReactSlides/>}
         </div></div>
         </>
     );

@@ -3,7 +3,7 @@
     background-color: rgba(233, 246, 255, 0.7);
     border-bottom: 0.5px groove rgb(207, 207, 207);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .footer-top-text {
     width: 95%;
@@ -25,7 +25,17 @@
     font-weight: 700;
     text-decoration: none;
     padding: 2.5px 0;
+    cursor: pointer;
 }
 .f-t:hover {
     color:#3498DB;
+}
+
+.f-t-m {
+    font-weight: 900;
+    color: rgb(12, 161, 167);
+}
+.f-t-w {
+    width: fit-content;
+    margin-top: 3.5px;
 }

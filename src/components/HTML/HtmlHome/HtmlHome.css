@@ -184,6 +184,7 @@
     justify-content: center;
     font-size: 100%;
     border-radius: 5px;
+    /* background-image: url(../HtmlImages/HtmlcardsBackground.jpg); */
     &:hover{
         background-color: cadetblue;
         color: white;
