@@ -647,43 +647,78 @@ export const online = [
 export const team = [
   {
     cover: "./images/team/t1.webp",
-    name: "Ph.D Adrian Molises",
+    name: "Sanjiv",
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },
   {
     cover: "./images/team/t2.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Devraj",
+    work: "DEVELOPER",
   },
   {
     cover: "./images/team/t3.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Naya",
+    work: "DEVELOPER",
   },
   {
     cover: "./images/team/t4.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Nikhel",
+    work: "DEVELOPER",
   },
   {
-    cover: "./images/team/t5.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t5.jpg",
+    name: "Aarna",
+    work: "Jr.DEVELOPER",
   },
   {
-    cover: "./images/team/t6.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t6.jpg",
+    name: "Farookh",
+    work: "Jr.DEVELOPER",
   },
   {
-    cover: "./images/team/t7.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t7.jpg",
+    name: "Kavi",
+    work: "Jr.DEVELOPER",
   },
   {
-    cover: "./images/team/t8.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t8.jpg",
+    name: "Ekalinga",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t9.jpg",
+    name: "Ananya",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t10.jpg",
+    name: "Anjali",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t11.jpg",
+    name: "Shiv Nadar",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t12.jpg",
+    name: "Narayana Murthy",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t13.jpg",
+    name: "Arjun",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t14.jpg",
+    name: "Aadhya",
+    work: "Jr.DEVELOPER",
+  },
+  {
+    cover: "./images/team/t15.jpg",
+    name: "Saanvi",
+    work: "Jr.DEVELOPER",
   },
 ];
 export const price = [

@@ -22,22 +22,22 @@ const HtmlHomeTagsMore = () => {
                     setitsopen(true);setimopen(false);setecopen(false);setsopen(false);settcopen(false);setfopen(false);setieopen(false)
                     }}>Inline text semantics</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    setimopen(!imopen);setitsopen(false);setecopen(false);setsopen(false);settcopen(false);setfopen(false);setieopen(false)
+                    setimopen(true);setitsopen(false);setecopen(false);setsopen(false);settcopen(false);setfopen(false);setieopen(false)
                     }}>Image and multimedia</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    setecopen(!ecopen);setitsopen(false);setimopen(false);setsopen(false);settcopen(false);setfopen(false);setieopen(false)
+                    setecopen(true);setitsopen(false);setimopen(false);setsopen(false);settcopen(false);setfopen(false);setieopen(false)
                     }}>Embedded content</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    setsopen(!sopen);setitsopen(false);setimopen(false);setecopen(false);settcopen(false);setfopen(false);setieopen(false)
+                    setsopen(true);setitsopen(false);setimopen(false);setecopen(false);settcopen(false);setfopen(false);setieopen(false)
                     }}>Scripting</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    settcopen(!tcopen);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);setfopen(false);setieopen(false)
+                    settcopen(true);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);setfopen(false);setieopen(false)
                     }}>Table content</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    setfopen(!fopen);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);settcopen(false);setieopen(false)
+                    setfopen(true);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);settcopen(false);setieopen(false)
                     }}>Forms</p>
                 <p className='HtmlTagsP' onClick={() => {
-                    setieopen(!ieopen);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);settcopen(false);setfopen(false)
+                    setieopen(true);setitsopen(false);setimopen(false);setecopen(false);setsopen(false);settcopen(false);setfopen(false)
                     }}>Interactive elements</p>
             </div>
 

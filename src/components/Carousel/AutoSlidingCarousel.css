@@ -1,0 +1,12 @@
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-row {
+    display: flex;
+  }
+  
+  .carousel-card {
+    margin: 0 5px; /* Adjust as needed */
+  }

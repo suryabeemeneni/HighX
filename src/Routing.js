@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 import AboutUs from "./components/HomeSection/about/AboutUs"
 import IncremenetDecrement from "./components/ReactJS/home/hooks/useState/IncrementDecrement"
@@ -23,35 +23,39 @@ import Validationformcontrol from "./components/ReactJS/home/formvalidation/cont
 import LoginForm from "./components/ReactJS/home/formvalidation/sampleform/LoginForm/LoginForm"
 import ReactHome from "./components/ReactJS/ReactHome";
 import HtmlHome from './components/HTML/HtmlHome';
+import MovieDetail from './components/API/MovieDetail';
+import APIHome from './components/API/APIHome';
 
 const Routing = () => {
     return (
         <>
         <Router>
-          <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/AboutUs' component={AboutUs} />
-          <Route exact path='/increment&decrement' component={IncremenetDecrement} />
-          <Route exact path='/increment' component={Incremenet} />
-          <Route exact path='/ueeffect' component={Ueffect} />
-          <Route exact path='/Useeffectwdp' component={Useeffectwdp} />
-          <Route exact path='/Useeffectblankdeo' component={Useeffectblankdeo} />
-          <Route exact path='/UECP' component={UECP} />
-          <Route exact path='/Usestate' component={Usestate} />
-          <Route exact path='/Useeffect' component={Useeffect} />
-          <Route exact path='/Sampleform' component={Sampleform} />
-          <Route exact path='/displayforms' component={Displayforms} />
-          <Route exact path='/Formvalidhome' component={Formvalidhome}/>
-          <Route exact path='/Validationform' component={Validationform}/>
-          <Route exact path='/Multipleforms' component={Multipleforms}/>
-          <Route exact path='/Controlledform' component={Controlledform}/>
-          <Route exact path='/Controlledformvalid' component={Controlledformvalid}/>
-          <Route exact path='/Validationformcontrol' component={Validationformcontrol}/>
-          <Route exact path='/Hooksform' component={HooksFrom}/>
-          <Route exact path='/LoginForm' component={LoginForm}/>
-          <Route exact path='/ReactHome' component={ReactHome}/>
-          <Route exact path='/htmlHome' component={HtmlHome}/>
-          </Switch>
+          <Routes>
+          {/* <Route path="/" element={<APIHome />} /> */}
+          <Route  path='/' element={<Home/>} />
+          <Route  path='/AboutUs' element={<AboutUs/>} />
+          <Route  path='/increment&decrement' element={<IncremenetDecrement/>} />
+          <Route  path='/increment' element={<Incremenet/>} />
+          <Route  path='/ueeffect' element={<Ueffect/>} />
+          <Route  path='/Useeffectwdp' element={<Useeffectwdp/>} />
+          <Route  path='/Useeffectblankdeo' element={<Useeffectblankdeo/>} />
+          <Route  path='/UECP' element={<UECP/>} />
+          <Route  path='/Usestate' element={<Usestate/>} />
+          <Route  path='/Useeffect' element={<Useeffect/>} />
+          <Route  path='/Sampleform' element={<Sampleform/>} />
+          <Route  path='/displayforms' element={<Displayforms/>} />
+          <Route  path='/Formvalidhome' element={<Formvalidhome/>}/>
+          <Route  path='/Validationform' element={<Validationform/>}/>
+          <Route  path='/Multipleforms' element={<Multipleforms/>}/>
+          <Route  path='/Controlledform' element={<Controlledform/>}/>
+          <Route  path='/Controlledformvalid' element={<Controlledformvalid/>}/>
+          <Route  path='/Validationformcontrol' element={<Validationformcontrol/>}/>
+          <Route  path='/Hooksform' element={<HooksFrom/>}/>
+          <Route  path='/LoginForm' element={<LoginForm/>}/>
+          <Route  path='/ReactHome' element={<ReactHome/>}/>
+          <Route  path='/htmlHome' element={<HtmlHome/>}/>
+          <Route path="/movie/:id" element={<MovieDetail />} />
+          </Routes>
         </Router> 
         </>
     );
