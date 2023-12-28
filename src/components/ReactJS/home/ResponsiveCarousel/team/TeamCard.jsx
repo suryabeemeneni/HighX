@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { team } from "../../dummydata";
+import { team } from "../../../../../dummydata";
+import './team.css'
 
 const TeamCard = () => {
 
   const settings = {
     dots: false,
     infinite: true,
+    arrows : false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f8f8f8;
 }
-/*------------global-----------*/
+/*------------global-----------
 .container {
   max-width: 85%;
   margin: auto;
@@ -66,7 +66,7 @@ button:hover {
   color: #fff;
 }
 
-/*------------global-----------*/
+/*------------global-----------
 #heading {
   text-align: center;
   padding: 40px 0;
@@ -160,5 +160,18 @@ p {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
+  }
+} */
+
+
+
+/* ----------------------------------------------------------------------- */
+.home-Main-cards:hover,.sitemap-card:hover {
+  background-color: cadetblue;
+  & h3 {
+      color: white;
+  }
+  & span,em {
+      color: white;
   }
 }

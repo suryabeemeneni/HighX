@@ -429,6 +429,143 @@ export const InteractiveElements = [
 ];
 
 // --------------------------------------------------------HTML TAGS------------------------------------------------------------------------//
+
+// ------------------------------------------------------- Home Page Cards --------------------------------------------------------------- //
+
+export const HomeCards = [
+  {
+    link : '/htmlHome',
+    imgsrc : "../images/HomeCards/html.jpg",
+    h3 : "HTML",
+    p1 : "In this curated compilation, we have gathered a diverse range of ",
+    em : "HTML code snippets",
+    p2 : " that showcase various functionalities and techniques"
+  },
+  {
+    link : "/CSSHome",
+    imgsrc : "../images/HomeCards/css.jpg",
+    h3 : "CSS",
+    p1 : "In this carefully curated compilation, we have gathered a wide array of ",
+    em : "CSS code snippets",
+    p2 : " that demonstrate the power and versatility of Cascading Style Sheets"
+  },
+  {
+    link : "/JSHome",
+    imgsrc : "../images/HomeCards/javascript.jpg",
+    h3 : "JavaScript",
+    p1 : "In this meticulously curated compilation, we have assembled a diverse range of ",
+    em : "JavaScript code snippets",
+    p2 : " that showcase the flexibility and power of this dynamic programming language"
+  },
+  {
+    link : "/ReactHome",
+    imgsrc : "../images/HomeCards/react.jpg",
+    h3 : "React",
+    p1 : "In this meticulously curated compilation, we have assembled a diverse range of ",
+    em : "code snippets",
+    p2 : " that showcase the power and flexibility of the React library"
+  },
+]
+// --------------------------------------- React Home Cards-------------------------------------//
+
+
+export const ReactHomeCardsOne = [
+  {
+    link : '/Homeprops',
+    imgsrc : '../images/ReactHomeCards/props.png',
+    title : 'Props',
+    para : '25 items'
+  },
+]
+
+export const ReactHomeCards = [
+  {
+    link : '/Usestate',
+    imgsrc : '../images/ReactHomeCards/useState.jpg',
+    title : 'useState',
+    para : '25 Items'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/JSX.png',
+    title : 'JSX',
+    para : '1 Item'
+  },
+  {
+    link : '/useeffect',
+    imgsrc : '../images/ReactHomeCards/useEffect.jpg',
+    title : 'useEffect',
+    para : '25 Items'
+  },
+  {
+    link : '/Homevalidation',
+    imgsrc : '../images/ReactHomeCards/form.jpg',
+    title : 'Login Forms',
+    para : '15 Items'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/BCC.jpg',
+    title : 'Back Ground Colour Changer',
+    para : '1 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/CounterApp.png',
+    title : 'Counter App',
+    para : '1 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/Todo.png',
+    title : 'Todo List App',
+    para : '5 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/Calculator.gif',
+    title : 'Calculator App',
+    para : '1 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/Router.jpg',
+    title : 'React Router',
+    para : '154 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/Map.jpg',
+    title : 'Map',
+    para : '10 Item'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/Api.jpg',
+    title : 'API',
+    para : '3 Items'
+  },
+  {
+    link : '/ResponsiveCarouselHome',
+    imgsrc : '../images/ReactHomeCards/Carousel.jpg',
+    title : 'Carousel',
+    para : '2 Items'
+  },
+  {
+    link : '',
+    imgsrc : '../images/ReactHomeCards/BMS.png',
+    title : 'Book My Show - Clone',
+    para : '1 item'
+  },
+  // {
+  //   link : '',
+  //   imgsrc : '',
+  //   title : '',
+  //   para : ''
+  // },
+]
+
+
 export const awrapper = [
   {
     cover:

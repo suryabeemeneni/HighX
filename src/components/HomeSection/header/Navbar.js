@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 import './Navbar.css'
 import logo from './image/download.jpg';
+import LoginForm from "./LoginForm/LoginForm";
+import SignupForm from "./SignupForm/SignupForm";
 
 const Navbar = () => {
+    const [openSignup, setOpenSignup] = useState(false);
+    const [openLogin, setOpenLogin] = useState(false)
+    
+    const handleButtonclick = () => {
+        setOpenLogin(false)
+        setOpenSignup(false)
+    }
     
     return (
         <body>
@@ -15,10 +24,10 @@ const Navbar = () => {
                         <button className="nav-function"><i className='fa fa-bars'/></button>
                         <div className='navbarLinks' id='myLinks'>
                             <a href='/' title='Home' className='navL'>Home</a>
-                            <a href='/aboutus' title='About us' className='navL'>About us</a>
-                            <a href='' title='Services' className='navL'>Services</a>
-                            <a href='' title='Careers' className='navL'>Careers</a>
-                            <a href='' title='Contact us' className='navL'>contact us</a>
+                            <a href='/htmlHome' title='HTML' className='navL'>HTML</a>
+                            <a href='/CSSHome' title='CSS' className='navL'>CSS</a>
+                            <a href='/JSHome' title='Java Script' className='navL'>Java Script</a>
+                            <a href='/ReactHome' title='React JS' className='navL'>React JS</a>
                             </div>
                             </div>
                         <div className='navbar-bottom'>
@@ -29,13 +38,15 @@ const Navbar = () => {
                             <a class="nav-toll" href="tel:879-030-4431" title="Call Us">Call Us: 879-030-4431</a>
                             </div>
                             <div className='navSecondItem'>
-                            <a class="nav-butt1" href="" title="Client Register">Client Register</a>
-                            <a class="nav-butt2" href="" title="Client Login">Client Login</a>
+                            <p class="nav-butt1" title="Client Register"  onClick={() => setOpenSignup(!openSignup)}>Client Register</p>
+                            <p class="nav-butt2" title="Client Login" onClick={() => setOpenLogin(!openLogin)} >Client Login</p>
                             </div>
                             </div>
                         </div>                    
                 </div>
             </nav>
+            {openSignup && <SignupForm onClose={handleButtonclick}/>}
+            {openLogin && <LoginForm onClose={handleButtonclick}/>}
         </body>
     );
 

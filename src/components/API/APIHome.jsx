@@ -35,7 +35,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import { Navigate, useNavigate } from 'react-router-dom';
-import Slider from 'react-slick';
 
 const APIHome = () => {
     const [products, updateProducts] = useState([])
@@ -65,22 +64,13 @@ const handleMovieClick = (id) => {
     if (products.length === 0) {
         return (<h2>Fetching data ...</h2>)
     }
-
-    const settings = {
-        slidesToShow: 10,
-        autoplay: true,
-        autoplaySpeed: 1000,
-    }
-
     return (
         <>
             {/* <h1>Products</h1> */}
            {/* { products.map((p) => <ProductCard name={p.title} price={p.price}/>)} */}
-           
-           <Slider {...settings} style={{display:'flex',flexDirection:'row'}} >
+           <div style={{display:'flex',flexDirection:'row', gap:"10px",overflowX:'scroll'}} >
            { products.map((p) => <ProductCard {...p} key={p.id} handleMovieClick={handleMovieClick}/>)}
-           </Slider>
-
+           </div>
 
                 {/* {products.map((product) => <div 
                   key={product.id} 

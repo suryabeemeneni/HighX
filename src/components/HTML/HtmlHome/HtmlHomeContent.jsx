@@ -1,11 +1,9 @@
 import React from 'react';
 import './HtmlHome.css'
-import APIHome from '../../API/APIHome';
 
 const HtmlHomeContent = () => {
     return (
         <>
-        <APIHome />
             <div className="HtmlHome-main-div">
             <div className="HtmlHome-sub-div">
                 <h1><strong>What is HTML</strong></h1>

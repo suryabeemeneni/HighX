@@ -230,7 +230,7 @@ const settings = {
 
 // Mock data for cards
 const cards = Array.from({ length: 15 }, (_, index) => (
-  <div key={index} className="card">
+  <div key={index} className="Rcard">
     {/* Your card content goes here */}
     Card {index + 1}
   </div>
@@ -238,6 +238,7 @@ const cards = Array.from({ length: 15 }, (_, index) => (
 
 return (
   <div className="carousel-container">
+          <h1>Responsive Auto-Sliding Carousel</h1>
     <Slider {...settings}>{cards}</Slider>
   </div>
 );

@@ -24,7 +24,10 @@ import LoginForm from "./components/ReactJS/home/formvalidation/sampleform/Login
 import ReactHome from "./components/ReactJS/ReactHome";
 import HtmlHome from './components/HTML/HtmlHome';
 import MovieDetail from './components/API/MovieDetail';
-import APIHome from './components/API/APIHome';
+import Homevalidation from './components/ReactJS/home/formvalidation/Homevalidation';
+import Homehooks from './components/ReactJS/home/hooks/Homehooks';
+import Homeprops from './components/ReactJS/home/props/Homeprops';
+import ResponsiveCarouselHome from './components/ReactJS/home/ResponsiveCarousel/ResponsiveCarouselHome'
 
 const Routing = () => {
     return (
@@ -55,6 +58,11 @@ const Routing = () => {
           <Route  path='/ReactHome' element={<ReactHome/>}/>
           <Route  path='/htmlHome' element={<HtmlHome/>}/>
           <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path='/Homeprops' element={<Homeprops/>} />
+          <Route path='/Homehooks' element={<Homehooks/>} />
+          <Route path='/Homevalidation' element={<Homevalidation/>} />
+          <Route path='/ResponsiveCarouselHome' element={<ResponsiveCarouselHome/>}/>
+          {/* <Route path='' element={}/> */}
           </Routes>
         </Router> 
         </>

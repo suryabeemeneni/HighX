@@ -85,6 +85,9 @@ body {
     justify-content: right;
     gap: 10%;
     margin-right: 2%;
+    & p{
+        cursor: pointer;
+    }
 }
 .nav-butt1 {
     font-size: 100%;

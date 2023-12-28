@@ -31,19 +31,14 @@
 /* ---------------------------------- */  
 
 
-
 .team-carousel-slide {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .team-items {
   background-color: #fff;
-  width: 300px;
   height: 400px;
-}
-.slick-slide {
-  /* float: right; */
   margin: 0 10px;
 }
 
@@ -51,7 +46,6 @@
   width: 100%;
   height: 75%;
 }
-
 .team-img img {
   width: 100%;
   height: 100%;
@@ -59,16 +53,16 @@
 }
 
 .team-overlay {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(-40%, -110%);
+  transform: translate(30%, -100%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   & i {
     font-size: 40px;
-    margin: 3%;
-    color: #1eb2a6;
+    margin: 15%;
     border-radius: 50%;
     font-size: 150%;
   }
@@ -103,9 +97,9 @@
   }
   & .team-overlay {
     opacity: 1;
+    color: black;
   }
   & i:hover {
     color: #fff;
   }
 }
-

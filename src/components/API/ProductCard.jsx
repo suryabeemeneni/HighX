@@ -5,7 +5,7 @@ const ProductCard = ({backdrop_path, id,title, overview, poster_path,vote_averag
     return (
         <>
 
-            <div style={{display:'flex',flexDirection:'column',}} onClick={() => handleMovieClick(id)}>
+            <div style={{display:'flex',flexDirection:'column'}} onClick={() => handleMovieClick(id)}>
            <h1 style={{ width:'200px',height:'50px'}}>{title}</h1>
            <img src={imageUrl} style={{ width:'200px',height:'300px'}}/>
            {/* <p style={{width:'200px'}}>{overview}</p> */}
