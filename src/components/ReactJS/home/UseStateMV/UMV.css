@@ -1,0 +1,163 @@
+.AboutCont-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+  }
+  .AboutContMore{
+    background-color: #f8f8f8;
+    min-width: 250px;
+    height: 100%;
+    max-width: 20%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  .AboutContP{
+    width: 90%;
+    padding: 5% 10%;
+    margin: 0%;
+    font-size: 100%;
+    color: #4a6374;
+    background-color: #1eb2a6;
+    border-bottom: 5px solid #eef2f5;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover{
+        background-color: #1eb2a6;
+        /* color: cadetblue; */
+        font-weight: 600;
+    }
+  }
+  
+  
+  
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+  
+  .AboutContOpen {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .AboutCont-cards3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .AboutCont-ch {
+        color: cadetblue;
+        font-size: 300%;   
+    }
+  }
+  .AboutCont-crds3 {
+    margin-top: 2rem;
+  }
+  
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  
+  .AboutCont-M {
+    width: 70%;
+    height: 30%;
+  
+  }
+  .AboutCont-head-M {
+    font-size: 170%;
+    text-decoration: underline;
+    font-weight: 300;
+  }
+  .AboutCont-para-M {
+    font-size: 95%;
+    font-weight: 400;
+  }
+  .AboutCont-h2 {
+    font-weight: 400;
+    margin: 1% 0;
+    font-size: 130%;
+    color: #24726c;
+  }
+  .AboutCont-para {
+    font-size: 85%;
+    font-weight: 400;
+    color: #4c4c4c;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*--------Media Query at max-width : 480px -----------------*/
+  @media (max-width:480px){
+    .AboutContent-Image {
+      width: 100%;
+      height: 100%;
+  }
+  .AboutContent-heading {
+    font-size: 300%;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left :55px;
+  }
+  .AboutContent-div{
+  padding: 19px;
+  }
+  }
+  /* ................media query for :768px........... */
+  
+  @media (max-width:768px){
+  
+    .AboutContent-Image {
+      width: 100%;
+      height: 100%;
+    }
+    .AboutContent-section2 {
+      padding: unset;
+    }
+    .AboutCont-para-M{
+      height: 52%;
+    }
+  }
+  /* ................media query for :480px........... */
+  
+  @media (max-width:480px){
+  .AboutCont-main {
+    padding-bottom: 0px;
+  }
+  .AboutContent-section2 {
+    width: 95%;
+  }
+  .AboutCont-M {
+    width: 90%;
+  }
+  .AboutCont-crds3{
+    margin-top: unset;
+  }
+  .AboutCont-main {
+    flex-direction: column;
+  }
+  .AboutContMore{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: unset;
+  }
+  .AboutContP {
+    width: fit-content;
+    padding: 2.5%;
+    margin: 1%;
+    border-bottom: unset;
+  }
+  .AboutContOpen {
+    width: 90%;
+    margin: auto;
+  }
+  }

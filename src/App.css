@@ -165,6 +165,15 @@ p {
 
 
 
+
+            /* filter: drop-shadow(0 0 0.6px #3d3d3d); */
+            /* text-shadow: 00 20px #00fffb, 0 0 40px #0081bc; */
+            /* background: linear-gradient(to right, #30cfd0, #3d245c 100%);
+            background-clip: text;
+            color: transparent; */
+
+
+
 /* ----------------------------------------------------------------------- */
 .home-Main-cards:hover,.sitemap-card:hover {
   background-color: cadetblue;

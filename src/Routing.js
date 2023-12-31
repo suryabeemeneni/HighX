@@ -23,11 +23,15 @@ import Validationformcontrol from "./components/ReactJS/home/formvalidation/cont
 import LoginForm from "./components/ReactJS/home/formvalidation/sampleform/LoginForm/LoginForm"
 import ReactHome from "./components/ReactJS/ReactHome";
 import HtmlHome from './components/HTML/HtmlHome';
-import MovieDetail from './components/API/MovieDetail';
+import MovieDetail from './components/ReactJS/home/API/MovieDetail';
 import Homevalidation from './components/ReactJS/home/formvalidation/Homevalidation';
 import Homehooks from './components/ReactJS/home/hooks/Homehooks';
 import Homeprops from './components/ReactJS/home/props/Homeprops';
 import ResponsiveCarouselHome from './components/ReactJS/home/ResponsiveCarousel/ResponsiveCarouselHome'
+import APIHome from './components/ReactJS/home/API/APIHome';
+import UMV from './components/ReactJS/home/UseStateMV/UMV';
+import GitHubHome from './components/GitHub/GitHubHome';
+import JavaScript from './components/JAVASCRIPT/JavaScript';
 
 const Routing = () => {
     return (
@@ -62,6 +66,10 @@ const Routing = () => {
           <Route path='/Homehooks' element={<Homehooks/>} />
           <Route path='/Homevalidation' element={<Homevalidation/>} />
           <Route path='/ResponsiveCarouselHome' element={<ResponsiveCarouselHome/>}/>
+          <Route path='/APIHome' element={<APIHome/>}/>
+          <Route path='/UMV' element={<UMV />}/>
+          <Route path='/GitHubHome' element={<GitHubHome />}/>
+          <Route path='/JavaScript' element={<JavaScript/>}/>
           {/* <Route path='' element={}/> */}
           </Routes>
         </Router> 

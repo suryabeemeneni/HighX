@@ -10,9 +10,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1%;
     & .home-Main-cards {
-        width: 350px;
+        width: min(18%, 350px);
         min-height: 200px;
         background-color: white;
         text-decoration: none;
@@ -106,3 +106,24 @@
         opacity: 1;
     }
 }
+
+/* p {
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-size: 80% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    &:hover {
+        animation: step-end;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    
+    100% {
+      background-position-x: 500%;
+    }
+  } */

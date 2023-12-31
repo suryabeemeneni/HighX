@@ -3,12 +3,13 @@
     min-height: 50vh;
     margin: auto;
     padding: 0 5%;
-    /* background-image: url(../../../public/images/awrapper.webp); */
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-image: url(../../../public/images/ReactHomeCards/RactTextBg.jpg);
+    background-size: 100% 100%;
     background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
     border-radius: 6px;
-    /* color: darkslategray; */
+    color: transparent;
 }
 .post-header {
     padding-top: 10%;
@@ -30,14 +31,15 @@
 
 .sitemap {
     width: 98%;
-    margin: 3% auto;
+    margin: 2% auto 5%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 .sitemap-card-one {
-    width: 550px !important;
+    width: 600px !important;
     height: 310px !important;
 }
 .sitemap-card {
@@ -87,5 +89,22 @@
             letter-spacing: 0.05em;
             margin: 2em 0 0 0 ;
         }
+    }
+}
+
+/* ---------------------------------------------------------- Media Query ------------------------------------------------------------ */
+
+@media (max-width : 768px) {
+    .sitemap-card {
+        width: 47%;
+    }
+}
+
+@media (max-width : 480px) {
+    .sitemap-card-one {
+        width: 95% !important;
+    }
+    .sitemap-card {
+        width: 95%;
     }
 }

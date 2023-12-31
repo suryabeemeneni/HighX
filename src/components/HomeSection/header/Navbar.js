@@ -26,8 +26,10 @@ const Navbar = () => {
                             <a href='/' title='Home' className='navL'>Home</a>
                             <a href='/htmlHome' title='HTML' className='navL'>HTML</a>
                             <a href='/CSSHome' title='CSS' className='navL'>CSS</a>
-                            <a href='/JSHome' title='Java Script' className='navL'>Java Script</a>
+                            <a href='JavaScript' title='Java Script' className='navL'>Java Script</a>
                             <a href='/ReactHome' title='React JS' className='navL'>React JS</a>
+                            <a href='/GitHubHome' title='Java Script' className='navL'>Git Hub</a>
+                            {/* <a href='/ReactHome' title='React JS' className='navL'>a w s</a> */}
                             </div>
                             </div>
                         <div className='navbar-bottom'>

@@ -16,7 +16,6 @@ const ReactSubHome = () => {
         </div>
         </div>
 
-
         <div className='sitemap'>
         {ReactHomeCardsOne.map((data) => (
          <Link to={data.link} class="sitemap-card sitemap-card-one" title={data.title}>

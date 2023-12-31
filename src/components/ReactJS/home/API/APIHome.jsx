@@ -34,7 +34,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 
 const APIHome = () => {
     const [products, updateProducts] = useState([])
@@ -56,7 +56,7 @@ const handleMovieClick = (id) => {
         const res = await fetch ("https://api.themoviedb.org/3/movie/now_playing?api_key=3035a2e62fc23afedb7da1c6546b79a9")
         const productList = await res.json()
         updateProducts(productList.results)
-        console.log(productList.results);
+        // console.log(productList.results);
         // return productList;
 
     }
