@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './HtmlHome.css'
-import {InlineTextSemantics, ImageMultimedia, EmbeddedContent, ScriptingTags, TableContent, FormsTags, InteractiveElements} from '../../../dummydata';
+import {InlineTextSemantics, ImageMultimedia, EmbeddedContent, ScriptingTags, TableContent, FormsTags, InteractiveElements} from '../../../Dummydata/Data-HTML';
 
 const HtmlHomeTagsMore = () => {
     const [itsopen, setitsopen] = useState(true)

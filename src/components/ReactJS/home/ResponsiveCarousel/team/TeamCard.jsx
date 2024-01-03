@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { team } from "../../../../../dummydata";
+import { team } from "../../../../../Dummydata/Data-React";
 import './team.css'
 
 const TeamCard = () => {

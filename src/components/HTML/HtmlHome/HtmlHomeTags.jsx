@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ContentSectioning, DocumentMetadata } from '../../../dummydata';
+import { ContentSectioning, DocumentMetadata } from '../../../Dummydata/Data-HTML';
 import csOverview from '../HtmlImages/ContentSectioningOverview.png'
 import HtmlHomeTagsMore from './HtmlHomeTagsMore';
 

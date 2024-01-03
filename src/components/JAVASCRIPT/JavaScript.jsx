@@ -3,6 +3,7 @@ import './JavaScript.css'
 import JavaScriptTop from './JavaScriptSub/JavaScriptTop';
 import JavaScriptTask from './JavaScriptSub/JavaScriptTask';
 import JavaScriptTasks from './JavaScriptSub/JavaScriptTasks';
+import JavaScriptfaq from './JavaScriptSub/JavaScriptfaq';
 
 const JavaScript = () => {
     return (
@@ -10,6 +11,7 @@ const JavaScript = () => {
             <JavaScriptTop />
             <JavaScriptTask />
             <JavaScriptTasks />
+            <JavaScriptfaq />
         </>
     );
 };

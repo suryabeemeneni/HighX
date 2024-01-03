@@ -4,7 +4,7 @@ const JavaScriptTasks = () => {
     return (
         <>
         <div className="jsTask-heading">
-            <h1><span>Java script - </span>Tasks</h1>
+            <h1><span>Java script - </span><span className="span-text">Tasks</span></h1>
         </div>
         </>
     );

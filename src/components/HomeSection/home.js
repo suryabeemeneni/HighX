@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css'
-import { HomeCards } from '../../dummydata';
+import { HomeCards } from '../../Dummydata/Data-Home';
 import { Link } from 'react-router-dom';
 import HomeSub from './HomeSub';
 

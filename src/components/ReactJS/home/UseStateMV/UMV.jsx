@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {ApplienceRepair, ComputerRepair, HomeCleaning, HomeHelp,HomeRepair, InteriorDesigning, InvertorBatteries, KitchenApplienceRepair, MobileTabletRepair, PackersMovers, PestControl} from "../../../../dummydata";
+import {ApplienceRepair, ComputerRepair, HomeCleaning, HomeHelp,HomeRepair, InteriorDesigning, InvertorBatteries, KitchenApplienceRepair, MobileTabletRepair, PackersMovers, PestControl} from "../../../../Dummydata/Data-React";
 import './UMV.css'
 
 const UMV = () => {

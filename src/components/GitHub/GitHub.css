@@ -14,11 +14,14 @@
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
 
-    /* display: none; */
+    display: none;
 }
 .GitHubtop-h1{
     padding: 100px 0 0 30px;
-    color: rgb(71, 197, 201);
+    background: linear-gradient(to right, #30cfd0,rgb(98, 98, 98), #648626, #d08989 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(143, 143, 143, 0.333));
     font-size: 300%;
 }
 .GitHubtop-p{
@@ -37,7 +40,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px 10px;
-    /* justify-content: center; */
+    justify-content: center;
+    /* & h3 {
+        background: linear-gradient(to right,  #343534, #aa3434 70%);
+        background-clip: text;
+        color: transparent;
+    } */
     & :hover {
         border-radius: 20px 0 20px 0;
         background-color: rgb(49, 114, 116);

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ReactHome.css'
 import { Link } from 'react-router-dom';
-import { ReactHomeCards, ReactHomeCardsOne } from '../../dummydata';
+import { ReactHomeCards, ReactHomeCardsOne } from '../../Dummydata/Data-React';
 
 const ReactSubHome = () => {
     return (
