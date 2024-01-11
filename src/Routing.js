@@ -32,6 +32,8 @@ import APIHome from './components/ReactJS/home/API/APIHome';
 import UMV from './components/ReactJS/home/UseStateMV/UMV';
 import GitHubHome from './components/GitHub/GitHubHome';
 import JavaScript from './components/JAVASCRIPT/JavaScript';
+import CSSHome from './components/CSS/CSSHome';
+import Circular from './components/ReactJS/home/Circular/Circular';
 
 const Routing = () => {
     return (
@@ -70,6 +72,8 @@ const Routing = () => {
           <Route path='/UMV' element={<UMV />}/>
           <Route path='/GitHubHome' element={<GitHubHome />}/>
           <Route path='/JavaScript' element={<JavaScript/>}/>
+          <Route path='/CSSHome' element={<CSSHome/>}/>
+          <Route path='?Circular' element={<Circular/>}/>
           {/* <Route path='' element={}/> */}
           </Routes>
         </Router> 

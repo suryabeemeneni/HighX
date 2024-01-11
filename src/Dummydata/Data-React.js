@@ -105,7 +105,13 @@ export const ReactHomeCardsOne = [
       link : '/APIHome',
       imgsrc : '../images/ReactHomeCards/BMS.png',
       title : 'Book My Show - Clone',
-      para : '1 item'
+      para : '1 Item'
+    },
+    {
+      link : '/Circular',
+      imgsrc : '../images/ReactHomeCards/PercentageBar.jpeg',
+      title : 'Profile Circuar percentage bar',
+      para : '1 Item'
     },
     // {
     //   link : '',
