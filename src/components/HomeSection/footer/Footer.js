@@ -15,11 +15,10 @@ const Footer = () => {
                     <a href='' className='footer-container1-para' title='Privacy policy'>Privacy policy</a>
                 </div>
                 <div className='footer-container2'>
-                    <a href=''>Refer a Friend</a>
-                    <a href=''>In The News</a>
-                    <a href=''>Clients & Reviews</a>
-                    <a href=''>Blogs</a>
-                    <a href=''>FAQ</a>
+                    <p style={{margin:'0px'}}>#12 Second Floor 3rd Cross</p>
+                    <p style={{margin:'0px'}}>Patel Narayana Reddy Layout</p>
+                    <p style={{margin:'0px'}}>6th Block Koramangala</p>
+                    <p style={{margin:'0px'}}>Bengaluru - 560095</p>
                 </div>
                 </div>
                 <div className='footer-container3'>
@@ -50,7 +49,7 @@ const Footer = () => {
             </div>
             </div>
             
-            <div className="footer-bottom">2023 © HIGH X-One Platform to connect</div>
+            <div className="footer-bottom">2022 © Hola9 Classifieds India Private Limited</div>
         </footer>
     );
 };

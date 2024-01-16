@@ -18,7 +18,6 @@ const JavaScriptTask = () => {
             to={data.link}
             className="jsTask-card"
             style={{
-              background: `url('${data.imgsrc}') no-repeat center center`,
               backgroundSize: "cover",
               transition: "background-image 0.3s ease-in-out",
               ":hover": { backgroundImage: `url('${data.imgsrc}')` },

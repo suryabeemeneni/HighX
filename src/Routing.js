@@ -73,7 +73,7 @@ const Routing = () => {
           <Route path='/GitHubHome' element={<GitHubHome />}/>
           <Route path='/JavaScript' element={<JavaScript/>}/>
           <Route path='/CSSHome' element={<CSSHome/>}/>
-          <Route path='?Circular' element={<Circular/>}/>
+          <Route path='/Circular' element={<Circular/>}/>
           {/* <Route path='' element={}/> */}
           </Routes>
         </Router> 

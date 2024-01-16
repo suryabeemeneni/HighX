@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: "Inter", sans-serif;
 }
 .navbar {
@@ -329,5 +329,80 @@ body {
         width: 50%;
         font-size: 100%;
         padding: 10px 15px;
+    }
+} */
+
+.navbar-main-div {
+  width: 99%;
+  height: 45px;
+  box-shadow: 0px 0px 2px 0px rgb(219, 219, 219);
+  position: fixed;
+  background: white;
+}
+.navbar-sub-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-cont {
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 2px solid rgb(6, 54, 56);
+  }  
+}
+.navbar-cont-profile {
+  display: flex;
+  align-items: center;
+}
+.edu-dropdown {
+    position: absolute;
+    top: 2.9rem;
+    right: 0rem;
+    width: 165px;
+    padding: 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, rgb(245, 245, 245),rgb(255, 255, 255), transparent);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    & a {
+        width: 100%;
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        line-height: 25px;
+        color: rgb(50, 23, 23);
+        padding: 10px 0;
+        border-bottom: 0.5px solid rgb(220, 220, 220);
+        text-align: center;
+        &:last-child {
+            border: none;
+        }
+        &:hover {
+            background-image: linear-gradient(to left,transparent, rgb(243, 243, 243), transparent);
+            /* color: white; */
+        }      
+    }
+    & button {
+        background: none;
+        width: 100%;
+        border-top: 0.5px solid gray;
+        margin: 0;
+        padding: 5px 0;
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+            color: darkblue;
+            font-weight: 600;
+        } 
     }
 }

@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import './LoginForm.css'
-import { Link} from "react-router-dom";
 import axios from 'axios';
-import SignupForm from '../SignupForm/SignupForm';
 
 const LoginForm = ({onClose}) => {
     
     const [passwordview, setpasswordview] = useState(false);
     const [formData, setFormData] = useState({username:"",password:""})
-    const [showSignup, setShowSignup] = useState(false);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -92,7 +89,9 @@ const LoginForm = ({onClose}) => {
                         
                         <div className='LoginForm-form-checkbox-container'>
                             <div className='LoginForm-form-checkbox-container-one'><input type='checkbox' title='Remind me'/>Remind me</div>
-                            <div className='LoginForm-form-checkbox-container-two' title='Forgot Password'><Link to='' >Forgot Password?</Link></div>
+                            <div className='LoginForm-form-checkbox-container-two' title='Forgot Password'>
+                                <a href='' >Forgot Password?</a>
+                                </div>
                         </div>
 
                         
@@ -106,11 +105,12 @@ const LoginForm = ({onClose}) => {
 
                    
 
-                    <div className='LoginForm-singup'><p>Don't have an account ?<Link to='' className='LoginForm-singup-link'title='sign up' onClick={() => setShowSignup(true)}>Sign up</Link></p></div>
+                    <div className='LoginForm-singup'><p>Don't have an account ?
+                        <a href='' className='LoginForm-singup-link'title='sign up'>Sign up</a>
+                        </p></div>
                 </div>
             </div>
         </div>
-        {showSignup && <SignupForm onClose={() => setShowSignup(false)}/>}
         </>
     );
 };
