@@ -12,7 +12,6 @@ const Footer = () => {
                     <a href='' className='footer-container1-para' title='Contact us'>Contact us</a>
                     <a href='' className='footer-container1-para' title='Careers'>Careers</a>
                     <a href='' className='footer-container1-para' title='Terms of Services'>Terms of Services</a>
-                    <a href='' className='footer-container1-para' title='Privacy policy'>Privacy policy</a>
                 </div>
                 <div className='footer-container2'>
                     <p style={{margin:'0px'}}>#12 Second Floor 3rd Cross</p>
@@ -33,7 +32,7 @@ const Footer = () => {
                             </div>
                             </div>
                             
-                    <div className='footer-container3-first'><i className="fas footer-container3-first-envelope"><i className='fa fa-map-marker-alt'></i></i><p className='footer-container3-first-para'>2552 Mount Site,Tustin,<br></br>California - 92780.</p></div>
+                    {/* <div className='footer-container3-first'><i className="fas footer-container3-first-envelope"><i className='fa fa-map-marker-alt'></i></i><p className='footer-container3-first-para'>2552 Mount Site,Tustin,<br></br>California - 92780.</p></div> */}
                     </div>
                     <div className='footer-container3-second'><hr className='footer-container3-line'/></div>
 

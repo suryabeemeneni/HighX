@@ -84,6 +84,14 @@ const Navbar = () => {
     }
   };
 
+
+//   Delete account (delete the local storage)
+
+const deleteAccount = () => {
+  localStorage.clear()
+  window.location.reload()
+}
+
 //   logout from website
 
 const logout = () => {
@@ -152,7 +160,7 @@ const logout = () => {
                   Back End
                 </a>
                 <a href="/" title="Cloud Computing">
-                  Cloud Computing
+                  DevOps
                 </a>
                 <a href="/GitHubHome" title="Git Hub">
                   Git Hub
@@ -177,7 +185,7 @@ const logout = () => {
               src={profileImage}
               style={{ borderRadius: "50%" }}
             />
-            &nbsp;{localStorage.name}
+            &nbsp;{localStorage.firstName}
           </p>
           {ProfileDropdown && (
             <div className="edu-dropdown prof-dropdown">
@@ -185,7 +193,10 @@ const logout = () => {
                 Profile
               </a>
               <button href="/ReactHome" title="React JS" onClick={logout}>
-                Logout
+                Logout <i class='fas fa-sign-out-alt navIcon'></i>
+              </button>
+              <button href="/ReactHome" title="React JS" onClick={deleteAccount} className="delButton">
+                Delete Account <i class='fas fa-trash-alt navIcon'></i>
               </button>
             </div>
           )}

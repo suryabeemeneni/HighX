@@ -107,6 +107,16 @@
     }
 }
 
+.home-Main-cards:hover{
+  background-color: cadetblue;
+  & h3 {
+      color: white;
+  }
+  & span,em {
+      color: white;
+  }
+}
+
 /* p {
     background: linear-gradient(90deg, #000, #fff, #000);
     background-size: 80% 100%;

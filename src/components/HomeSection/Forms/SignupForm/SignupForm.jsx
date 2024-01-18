@@ -147,11 +147,11 @@ const SignupForm = ({onClose}) => {
 
             // to store data in local storage
             localStorage.setItem('firstName',firstName.current.value )
-            localStorage.setItem('lastName',lastName.current.value )
+            localStorage.setItem('LastName',lastName.current.value )
             localStorage.setItem('email',email.current.value )
-            localStorage.setItem('phoneNumber',phoneNumber.current.value )
+            localStorage.setItem('phhoneNumber',phoneNumber.current.value )
             localStorage.setItem('password',Password.current.value )
-            localStorage.setItem('confirmpassword',confirmPassword.current.value )
+            localStorage.setItem('confirmPassword',confirmPassword.current.value )
             localStorage.setItem('signup',email.current.value )
 
             // after submit we need to relaod page manally to navigate to home page {so we are using}
