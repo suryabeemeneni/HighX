@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './SignupForm.css'
 import AppHome from '../../../../AppHome';
+import LoginForm from '../LoginForm/LoginForm';
+import { click } from '@testing-library/user-event/dist/click';
 
 const SignupForm = ({onClose}) => {
     const [passwordview, setpasswordview] = useState(false);
     const [confirmPasswordView, setconfirmPasswordView] = useState(false);
+    const [Login, setLogin] = useState(false)
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -176,12 +179,17 @@ const SignupForm = ({onClose}) => {
         }
     },[])
 
-
+    const showlogin = (e) => {
+        e.preventDefault()
+        if (click) {
+            setLogin(true)
+        }
+    }
 
     return (
         <>
         {/* if sign up is true we will navigate (?) to home page else show the sign up form */}
-        {showHome ? <AppHome /> :
+        {showHome ? <AppHome /> : Login? (<LoginForm/>) : (
             <div className="signupForm-main-div">
                 <div className="signupForm-sub-div">
                 <div className='signupForm-logo'>
@@ -251,11 +259,12 @@ const SignupForm = ({onClose}) => {
                     <div className='signupForm-line'><hr></hr></div>
 
                     <div className='signupForm-singup'><p>Already have an account ? 
-                        <a href='' className='signupForm-singup-link' title='Sign In' >Sign In</a>
+                        <a href='' className='signupForm-singup-link' title='Sign In' onClick={showlogin} >Sign In</a>
                         </p></div>
                 </div>
                 </div>
             </div>
+            )
             }
         </>
     );
