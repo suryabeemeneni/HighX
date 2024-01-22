@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './LoginForm.css'
 import axios from 'axios';
 
-const LoginForm = ({onClose}) => {
+const LoginForm = ({handleSubmit}) => {
     
     const [passwordview, setpasswordview] = useState(false);
     const [formData, setFormData] = useState({username:"",password:""})
@@ -35,7 +35,7 @@ const LoginForm = ({onClose}) => {
     };
 
 
-    const handleSubmit = async (e) => {e.preventDefault();
+    const handleButtonSubmit = async (e) => {e.preventDefault();
 
         const isNameValid = validateName();
         const isPasswordValid = validatePassword();
@@ -63,14 +63,11 @@ const LoginForm = ({onClose}) => {
         <>
         <div className='LoginForm-main-div'>
             <div className='LoginForm-sub-div'>
-                <div className='LoginForm-logo'>
-                <i class='fas fa-times' title='Close' onClick={() => onClose()}></i>
-                </div>
 
                 <div className='LoginForm-container'>
                     <div className='LoginForm-heading'><h3>Login in to Account</h3></div>
 
-                    <form onSubmit={handleSubmit} className='LoginForm-main-form'>
+                    <form className='LoginForm-main-form' onSubmit={handleSubmit}>
                         <div className='LoginForm-form-input'>
                             <input type="text" value={formData.username}  onChange={handleChange} name='username' autoComplete='off' required></input>
                             <label>Username or email</label>
@@ -97,7 +94,7 @@ const LoginForm = ({onClose}) => {
                         
 
                         <div className='LoginForm-form-subbmitButton'>
-                            <button type='submit' title='Login'>Login</button>
+                            <button type='submit' title='Login' onClick={handleButtonSubmit}>Login</button>
                         </div>
                     </form>
                     

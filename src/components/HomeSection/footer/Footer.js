@@ -14,21 +14,21 @@ const Footer = () => {
                     <a href='' className='footer-container1-para' title='Terms of Services'>Terms of Services</a>
                 </div>
                 <div className='footer-container2'>
-                    <p style={{margin:'0px'}}>#12 Second Floor 3rd Cross</p>
-                    <p style={{margin:'0px'}}>Patel Narayana Reddy Layout</p>
-                    <p style={{margin:'0px'}}>6th Block Koramangala</p>
-                    <p style={{margin:'0px'}}>Bengaluru - 560095</p>
+                    <i style={{margin:'0px'}}>#12 Second Floor 3rd Cross</i>
+                    <i style={{margin:'0px'}}>Patel Narayana Reddy Layout</i>
+                    <i style={{margin:'0px'}}>6th Block Koramangala</i>
+                    <i style={{margin:'0px'}}>Bengaluru - 560095</i>
                 </div>
                 </div>
                 <div className='footer-container3'>
                     <div className='footer-container3-all'>
                     <div className='footer-container3-one'>
-                    <a href='' className='footer-container3-first f-c-f' title='email'><i class="footer-container3-first-envelope"><i className='fas fa-envelope'></i></i><p className='f-c-f-p'>info@highx.com</p></a>
+                    <a href='' className='footer-container3-first f-c-f' title='email'><i class="footer-container3-first-envelope"><i className='fas fa-envelope'></i></i><p className='f-c-f-p'>hello@hola9.com</p></a>
                     <div className='footer-container3-first'><i class="fas footer-container3-first-envelope"><i className='fas fa-phone-alt'></i></i>
                             <div className='footer-container3-first-link'>
-                            <a class="footer-container3-first-link-number f-c-f-p" href="tel:1-800-800-741" title="Toll Free">1-800-800-741</a>
-                            <span class="footer-container3-first-link-number">|</span>
-                            <a class="footer-container3-first-link-number f-c-f-p" href="tel:879-030-4431" title="Call Us">879-030-4431</a>
+                            <a class="footer-container3-first-link-number f-c-f-p" href="tel:1-800-800-741" title="Toll Free">+919606451628</a>
+                            {/* <span class="footer-container3-first-link-number">|</span>
+                            <a class="footer-container3-first-link-number f-c-f-p" href="tel:879-030-4431" title="Call Us">879-030-4431</a> */}
                             </div>
                             </div>
                             

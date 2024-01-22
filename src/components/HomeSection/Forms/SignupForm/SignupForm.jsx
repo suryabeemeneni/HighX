@@ -1,13 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './SignupForm.css'
-import AppHome from '../../../../AppHome';
-import LoginForm from '../LoginForm/LoginForm';
-import { click } from '@testing-library/user-event/dist/click';
 
-const SignupForm = ({onClose}) => {
+const SignupForm = ({showlogin, handleSubmit}) => {
     const [passwordview, setpasswordview] = useState(false);
     const [confirmPasswordView, setconfirmPasswordView] = useState(false);
-    const [Login, setLogin] = useState(false)
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -136,7 +132,7 @@ const SignupForm = ({onClose}) => {
     const Password = useRef()
     const confirmPassword = useRef()
 
-    const handleSubmit = (e) => {
+    const handleButtonSubmit = (e) => {
         e.preventDefault();
     
         // this is gives the user data inputs
@@ -164,43 +160,17 @@ const SignupForm = ({onClose}) => {
         }
     }
 
-
-    // if Login is sucessfull we need to navigate to Homepage
-
-    const [showHome, setShowHome] = useState(false)
-    
-
-    // this localStorageSignup will take data from handlesubmit 
-    const localStorgaeSignup = localStorage.getItem("signup")
-
-    useEffect ( () => {
-        if (localStorgaeSignup) {
-            setShowHome(true)
-        }
-    },[])
-
-    const showlogin = (e) => {
-        e.preventDefault()
-        if (click) {
-            setLogin(true)
-        }
-    }
-
     return (
         <>
-        {/* if sign up is true we will navigate (?) to home page else show the sign up form */}
-        {showHome ? <AppHome /> : Login? (<LoginForm/>) : (
             <div className="signupForm-main-div">
                 <div className="signupForm-sub-div">
-                <div className='signupForm-logo'>
-                {/* <h2 className='LoginForm-logo-image'>Login</h2> */}
-                <i class='fas fa-times' title='Close' onClick={() => onClose()}></i>
-                </div>
 
                 <div className='signupForm-container'>
                     <div className='signupForm-heading'><h3>Create An Account</h3></div>
 
-                    <form className='signupForm-main-form'>
+                    <form className='signupForm-main-form' 
+                    // onSubmit={handleSubmit}
+                    >
                         <div className='signupForm-form-input'>
                             <div className="signupForm-form-input-fields">
                             <input type="text" autoComplete='off' required              id='firstName' name='firstName' value={formData.firstName} onChange={handleChange} ref={firstName}></input>
@@ -264,8 +234,6 @@ const SignupForm = ({onClose}) => {
                 </div>
                 </div>
             </div>
-            )
-            }
         </>
     );
 };

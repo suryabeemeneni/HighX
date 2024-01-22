@@ -116,12 +116,12 @@ const logout = () => {
             Home
           </a>
           <a
-            href="https://hola9.com/"
-            title="Hola9"
-            target="_blank"
+            href=""
+            title="Logons"
             className="navbar-cont"
           >
-            Explore Hola9
+          Logons
+          {/* <i class="far fa-clock" aria-hidden="true"></i>  */}
           </a>
           <div>
             <p
@@ -135,11 +135,11 @@ const logout = () => {
               }
               onClick={makesetEduDropdown}
             >
-              Education
+              Technologies
             </p>
             {eduDropdown && (
               <div className="edu-dropdown">
-                <a href="/" title="Home">
+                <a href="/FrontEnd" title="Front End">
                   Front End
                 </a>
                 {/* <div  style={{display : 'none', flexDirection:'column'}}>
