@@ -366,7 +366,7 @@
   align-items: center;
 }
 .edu-dropdown {
-    position: absolute;
+    position: fixed;
     top: 2.9rem;
     right: 0rem;
     width: 165px;

@@ -1,5 +1,5 @@
 .JavaScript-top {
-    width: 97%;
+    width: 100%;
     margin: auto;
     height: 60vh;
     background-image: linear-gradient(90deg, rgb(134, 179, 187) 54.97%,  rgba(219, 208, 208, 0.04) 82.47%), 
@@ -36,7 +36,7 @@
 /* ----------------------------------------------------------------------------------------------------------- */
 
 .JavaScript-top-two {
-    width: 97%;
+    width: 100%;
     margin: auto;
     height: 60px;
     background-color: cadetblue;

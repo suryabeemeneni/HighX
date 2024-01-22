@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import AboutUs from "./components/HomeSection/about/AboutUs"
 import IncremenetDecrement from "./components/FrontEnd/ReactJS/home/hooks/useState/IncrementDecrement"
 import Incremenet from "./components/FrontEnd/ReactJS/home/hooks/useState/Increment"
-import Home from "./components/HomeSection/home"
+import Home from "./components/HomeSection/Home/home"
 import Ueffect from "./components/FrontEnd/ReactJS/home/hooks/useEffect/Ueffect"
 import UECP from "./components/FrontEnd/ReactJS/home/hooks/useEffect/UECP"
 import Usestate from "./components/FrontEnd/ReactJS/home/hooks/useState/Usestate"
@@ -30,7 +30,7 @@ import Homeprops from './components/FrontEnd/ReactJS/home/props/Homeprops';
 import ResponsiveCarouselHome from './components/FrontEnd/ReactJS/home/ResponsiveCarousel/ResponsiveCarouselHome'
 import APIHome from './components/FrontEnd/ReactJS/home/API/APIHome';
 import UMV from './components/FrontEnd/ReactJS/home/UseStateMV/UMV';
-import GitHubHome from './components/FrontEnd/GitHub/GitHubHome';
+import GitHubHome from './components/GitHub/GitHubHome';
 import JavaScript from './components/FrontEnd/JAVASCRIPT/JavaScript';
 import CSSHome from './components/FrontEnd/CSS/CSSHome';
 import Circular from './components/FrontEnd/ReactJS/home/Circular/Circular';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { GHCCont, GHCone } from '../../Dummydata/Data-Git';
+import { GHCCont, GHCone } from '../DummyData/Data-Git';
 
 const GitHubContent = () => {
     return (

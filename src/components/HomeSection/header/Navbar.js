@@ -56,7 +56,7 @@
 
 // export default Navbar;
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import navImage from "./image/Hola.jpg";
 import profileImage from "./image/download.jpg";
 import "./Navbar.css";
@@ -64,16 +64,31 @@ import "./Navbar.css";
 const Navbar = () => {
   const [eduDropdown, setEduDropdown] = useState(false);
 
+  let eduMenu = useRef()
+
   const makesetEduDropdown = () => {
     if (eduDropdown == false) {
-      setEduDropdown(true);
+      setEduDropdown(!eduDropdown);
       setProfileDropdown(false);
     } else {
       setEduDropdown(false);
     }
   };
 
+  // Close Dropdown
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!eduMenu.current.contains(e.target)) {
+        setEduDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+  }, []);
+
+
   const [ProfileDropdown, setProfileDropdown] = useState(false);
+
+  let ProfileMenu = useRef()
 
   const makesetProfileDropdown = () => {
     if (ProfileDropdown == false) {
@@ -83,6 +98,15 @@ const Navbar = () => {
       setProfileDropdown(false);
     }
   };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!ProfileMenu.current.contains(e.target)) {
+        setProfileDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+  }, []);
 
 
 //   Delete account (delete the local storage)
@@ -98,6 +122,7 @@ const logout = () => {
     localStorage.removeItem("signup")
     window.location.reload()
 }
+ 
 
   return (
     <>
@@ -123,7 +148,7 @@ const logout = () => {
           Logons
           {/* <i class="far fa-clock" aria-hidden="true"></i>  */}
           </a>
-          <div>
+          <div ref={eduMenu}>
             <p
               href="/CSSHome"
               title="Education"
@@ -168,6 +193,7 @@ const logout = () => {
               </div>
             )}
           </div>
+          <div ref={ProfileMenu}>
           <p
             href="/GitHubHome"
             title="Profile"
@@ -200,6 +226,7 @@ const logout = () => {
               </button>
             </div>
           )}
+          </div>
         </div>
       </nav>
     </>

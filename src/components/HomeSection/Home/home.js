@@ -1,9 +1,12 @@
 import React from 'react';
+import HAbout from './Home-cont/HAbout';
 
 const home = () => {
     return (
         <>
-           dcfdsfd 
+           <div style={{height:'7rem'}}></div>
+
+           <HAbout/>
         </>
     );
 };
