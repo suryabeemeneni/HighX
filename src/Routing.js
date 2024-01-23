@@ -35,6 +35,7 @@ import JavaScript from './components/FrontEnd/JAVASCRIPT/JavaScript';
 import CSSHome from './components/FrontEnd/CSS/CSSHome';
 import Circular from './components/FrontEnd/ReactJS/home/Circular/Circular';
 import FrontEndHome from './components/FrontEnd/FrontEndHome';
+import UserProfile from './components/logons/UserProfile/UserProfileImages/UserProfile';
 
 const Routing = () => {
     return (
@@ -75,6 +76,7 @@ const Routing = () => {
           <Route path='/CSSHome' element={<CSSHome/>}/>
           <Route path='/Circular' element={<Circular/>}/>
           <Route path='/FrontEnd' element={<FrontEndHome />}/>
+          <Route path='/Profile' element={<UserProfile/>}/>
           {/* <Route path='' element={}/> */}
           </Routes>
         </Router> 

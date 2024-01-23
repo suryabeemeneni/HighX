@@ -20,14 +20,14 @@ const desk={
 
 
 const HAbout = () => {
-    // const data=[
-    //     {id:1,
-    //         icon:<FaAward/>,title:"ECommerce Platform"},
-    //     {id:2,
-    //         icon:<TbBooks/>,title:"Employees",desc:""},
-    //     {id:3,
-    //         icon:<GiMedal/>,title:"Developers,Testers ,BA and Hr",desc:""},
-    // ]
+//     const data=[
+//         {id:1,
+//             icon:<FaAward/>,title:"ECommerce Platform"},
+//         {id:2,
+//             icon:<TbBooks/>,title:"Employees",desc:""},
+//         {id:3,
+//             icon:<GiMedal/>,title:"Developers,Testers ,BA and Hr",desc:""},
+//     ]
 
   return (
     <section id="about">
@@ -51,16 +51,16 @@ const HAbout = () => {
               place <ins><b style={{color:"red"}}>ECommerce Platform</b></ins>, focuses on expert services around
               Home, Life and Self and where the user need is customized
             </p>
-          {/* <div className='about__cards'>
-          {data.map(item=>(
+          <div className='about__cards'>
+          {/* {data.map(item=>(
               <div key={item.id} className="about__card">
                 <span className='about__card-icon'>{item.icon}</span>
                 <h5>{item.title}</h5>
                 <small>{item.desc}</small>
               </div>
-            ))}
+            ))} */}
           
-          </div> */}
+          </div>
           </div>  
         
       </div>

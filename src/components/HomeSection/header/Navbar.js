@@ -215,13 +215,13 @@ const logout = () => {
           </p>
           {ProfileDropdown && (
             <div className="edu-dropdown prof-dropdown">
-              <a href="/JavaScript" title="Java Script">
+              <a href="/Profile" title="Profile">
                 Profile
               </a>
-              <button href="/ReactHome" title="React JS" onClick={logout}>
+              <button title="Logout" onClick={logout}>
                 Logout <i class='fas fa-sign-out-alt navIcon'></i>
               </button>
-              <button href="/ReactHome" title="React JS" onClick={deleteAccount} className="delButton">
+              <button title="Delete Account" onClick={deleteAccount} className="delButton">
                 Delete Account <i class='fas fa-trash-alt navIcon'></i>
               </button>
             </div>

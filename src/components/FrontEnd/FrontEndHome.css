@@ -150,7 +150,7 @@
     align-items: end;
     justify-content: center;
     border-bottom: 2px solid white;
-    position: relative;
+    /* position: unset; */
     margin-top: 45px;
   }
 
